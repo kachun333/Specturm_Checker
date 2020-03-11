@@ -28,6 +28,7 @@
         "https://spectrum.um.edu.my/*"
       ],
       "js": [
+        "js/jquery/jquery.min.js",
         "src/inject/inject.js"
       ]
     }
