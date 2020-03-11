@@ -3,15 +3,73 @@
 	#mainPopup {
 		padding: 10px;
 		height: 200px;
-		width: 400px;
+		width: 320px;
 		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+
+	#header {
+		display: flex;
+	}
+
+	#header-title {
+		flex: 1;
+	}
+
+	#header-icon {
+		/* float: right; */
+	}
+
+	#last-checked {
+		display: flex;
+	}
+	#last-checked-time {
+		flex: 1;
+	}
+	#updates-header {
+		display: flex;
+	}
+	#updates-header-title {
+		flex: 1;
+	}
+
+	.divider {
+		margin: 16px 0;
 	}
 	h1 {
 		font-size: 2em;
 	}
+	h1,h2,h3,h4,h5,h6 {
+		margin: 0;
+	}
 </style>
 
 <div id="mainPopup">
-<h1>Hello extensionizr!</h1>
-<p>To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/browser_action/browser_action.html. The CSS is there, too.</p>
+	<section id="header">
+		<h1 id="header-title"> Spectrum Checker</h1>
+		<i class="material-icons">brightness_2</i>
+		<i class="material-icons">brightness_7</i>
+		<i class="material-icons">settings</i>
+		<i class="material-icons">autorenew</i>
+		<!-- <img src="" alt="setting" id="header-icon"> -->
+	</section>
+	<hr class="divider">
+	<section id="last-checked">
+		<h3 id="last-checked-time">Last Check: </h3>
+		<button>Check Now</button>
+	</section>
+	<hr class="divider">
+	<section id="updates">
+		<section id="updates-header">
+			<h2 id="updates-header-title">WIF3001 Software Testing</h2>
+			<i class="material-icons">navigate_before</i>
+			<i class="material-icons">navigate_next</i>
+		</section>
+		<ol>
+			<li>updates 1</li>
+			<li>updates 1</li>
+			<li>updates 1</li>
+		</ol>
+	</section>
 </div>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
